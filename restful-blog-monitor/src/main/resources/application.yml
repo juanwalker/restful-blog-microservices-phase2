@@ -1,0 +1,26 @@
+server:
+  port: 8383
+
+
+turbine:
+  appConfig: author,credentials,post
+  aggregator:
+    clusterConfig: AUTHOR,CREDENTIALS,POST
+
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds : 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+---
+spring:
+  profiles: docker
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds : 5
+    serviceUrl:
+      defaultZone: http://${EUREKA_PORT_8761_TCP_ADDR}:8761/eureka/
+  instance:
+      preferIpAddress: true

@@ -1,0 +1,43 @@
+spring:
+  rabbitmq:
+    port: 5672
+    host: 'localhost'
+    username: guest
+    password: guest
+
+  datasource:
+    url: jdbc:mysql://localhost/restful_blog_log
+    username: root
+    password: root
+    driverClassName: com.mysql.jdbc.Driver
+  jpa:
+    show-sql : true
+    hibernate:
+      ddl-auto: update
+      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5Dialect
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+---
+spring:
+  profiles: docker
+  rabbitmq:
+    port: 5672
+    host: ${RABBITMQ_PORT_5672_TCP_ADDR}
+    username: guest
+    password: guest
+  datasource:
+    url: jdbc:mysql://${RESTFUL_BLOG_LOG_PORT_3306_TCP_ADDR}/restful_blog_log
+    username: root
+    password: root
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_PORT_8761_TCP_ADDR}:8761/eureka/
+  instance:
+      preferIpAddress: true

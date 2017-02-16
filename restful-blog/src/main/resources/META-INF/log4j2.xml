@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	<Appenders>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="[%level] %c{2} - %msg %d{yyyy-MM-dd HH:mm:ss.SSS}%n"   />
+		</Console>
+		<RabbitMQ name="rabbitmq"
+				  host="192.168.99.100" port="5672" user="guest" password="guest" virtualHost="/"
+				  exchange="spring-boot-exchange" declareExchange="true" durable ="true" autoDelete="false"
+				  applicationId="testAppId" routingKeyPattern="log4j.routing.key" exchangeType="fanout"
+				  contentEncoding="UTF-8" generateId="false" deliveryMode="NON_PERSISTENT"
+				  charset="UTF-8" contentType="text/plain"
+				  senderPoolSize="2" maxSenderRetries="30">
+			<PatternLayout pattern="[%level] %c{2} - %msg %d{yyyy-MM-dd HH:mm:ss.SSS}%n"   />
+		</RabbitMQ>
+	</Appenders>
+	<Loggers>
+		<Logger name="com.benjsicam.restfulblog" level="info">
+			<AppenderRef 	ref="rabbitmq" />
+		</Logger>
+		<Root>
+			<AppenderRef ref="STDOUT" />
+		</Root>
+	</Loggers>
+</Configuration>

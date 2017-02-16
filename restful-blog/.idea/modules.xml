@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-configuration/ocr-configuration.iml" filepath="$PROJECT_DIR$/../restful-blog-configuration/ocr-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../restful-blog-master/restful-blog.iml" filepath="$PROJECT_DIR$/../../restful-blog-master/restful-blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-credentials/restful-blog-authentication.iml" filepath="$PROJECT_DIR$/../restful-blog-credentials/restful-blog-authentication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-author/restful-blog-author.iml" filepath="$PROJECT_DIR$/../restful-blog-author/restful-blog-author.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-configuration/restful-blog-configuration.iml" filepath="$PROJECT_DIR$/../restful-blog-configuration/restful-blog-configuration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-credentials/restful-blog-credentials.iml" filepath="$PROJECT_DIR$/../restful-blog-credentials/restful-blog-credentials.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-eureka/restful-blog-eureka.iml" filepath="$PROJECT_DIR$/../restful-blog-eureka/restful-blog-eureka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-monitor/restful-blog-monitor.iml" filepath="$PROJECT_DIR$/../restful-blog-monitor/restful-blog-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/restful-blog-monolith.iml" filepath="$PROJECT_DIR$/restful-blog-monolith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-sidecar/restful-blog-sidecar.iml" filepath="$PROJECT_DIR$/../restful-blog-sidecar/restful-blog-sidecar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-credentials/user-registration.iml" filepath="$PROJECT_DIR$/../restful-blog-credentials/user-registration.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../restful-blog-zipkin/zipkin.iml" filepath="$PROJECT_DIR$/../restful-blog-zipkin/zipkin.iml" />
+    </modules>
+  </component>
+</project>

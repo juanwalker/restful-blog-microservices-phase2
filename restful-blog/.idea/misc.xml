@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../user-registration/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-eureka/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-author/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-authentication/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-sidecar/pom.xml" />
+        <option value="$PROJECT_DIR$/../ocr-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-credentials/pom.xml" />
+        <option value="$PROJECT_DIR$/../../restful-blog-master/pom.xml" />
+        <option value="$PROJECT_DIR$/../restful-blog-monitor/pom.xml" />
+        <option value="$PROJECT_DIR$/../zipkin/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/classes" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

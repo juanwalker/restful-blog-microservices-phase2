@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: author
+  cloud:
+    config:
+        uri: http://localhost:8888
+
+---
+spring:
+  profiles: docker
+  cloud:
+    config:
+        uri: http://restful-blog-configuration:8888
+        failFast: true
+        retry:
+          maxAttempts: 9999
+        discovery:
+          enabled: true
