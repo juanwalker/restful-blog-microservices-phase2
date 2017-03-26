@@ -1,12 +1,15 @@
+#Database Configuration#
+server:
+  port: 8181
+
 spring:
   rabbitmq:
     port: 5672
     host: 'localhost'
     username: guest
     password: guest
-
   datasource:
-    url: jdbc:mysql://localhost/restful_blog_log
+    url: jdbc:mysql://localhost/restful_blog_auth
     username: root
     password: root
     driverClassName: com.mysql.jdbc.Driver

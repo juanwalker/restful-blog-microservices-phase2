@@ -22,31 +22,16 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5Dialect
 eureka:
+  instance:
+    reaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
 
-#hystrix:
-#  command:
-#    default:
-#      execution:
-#        timeout:
-#          enabled: false
----
-spring:
-  profiles: docker
-  rabbitmq:
-    port: 5672
-    host: ${RABBITMQ_PORT_5672_TCP_ADDR}
-    username: guest
-    password: guest
-  datasource:
-    url: jdbc:mysql://${RESTFUL_BLOG_AUTHOR_PORT_3306_TCP_ADDR}/restful_blog_author
-    username: root
-    password: root
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://${EUREKA_PORT_8761_TCP_ADDR}:8761/eureka/
-  instance:
-      preferIpAddress: true
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: false

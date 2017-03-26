@@ -4,9 +4,5 @@ server:
 sidecar:
   port: 8080
   health-uri: http://localhost:${sidecar.port}/health.json
----
-spring:
-  profiles: docker
-sidecar:
-  health-uri: http://${MONOLITH_PORT_8080_TCP_ADDR}:${sidecar.port}/health.json
+
 

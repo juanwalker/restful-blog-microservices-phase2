@@ -18,7 +18,7 @@
 		<Logger name="com.benjsicam.restfulblog" level="info">
 			<AppenderRef 	ref="rabbitmq" />
 		</Logger>
-		<Root>
+		<Root  level="info">
 			<AppenderRef ref="STDOUT" />
 		</Root>
 	</Loggers>

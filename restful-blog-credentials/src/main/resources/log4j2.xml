@@ -5,7 +5,7 @@
 			<PatternLayout pattern="[%level] %c{2} - %msg %d{yyyy-MM-dd HH:mm:ss.SSS}%n"   />
 		</Console>
 		<RabbitMQ name="rabbitmq"
-				  host="192.168.99.100" port="5672" user="guest" password="guest" virtualHost="/"
+				  host="${env:RABBITMQ_PORT_5672_TCP_ADDR:-127.0.0.1}" port="5672" user="guest" password="guest" virtualHost="/"
 				  exchange="spring-boot-exchange" declareExchange="true" durable ="true" autoDelete="false"
 				  applicationId="testAppId" routingKeyPattern="log4j.routing.key" exchangeType="fanout"
 				  contentEncoding="UTF-8" generateId="false" deliveryMode="NON_PERSISTENT"
