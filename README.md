@@ -5,10 +5,6 @@ This project is part of the transformation to microservices of project https://g
 Take into account that for this stage you have to  complete all stage 1, for this stage you will need to create three new databases with the following tables:
 
 **restful_blog_post**
-
-
-
-**restful_blog_author**
 ```sql
 CREATE TABLE IF NOT EXISTS `post` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
